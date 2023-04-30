@@ -115,7 +115,7 @@ class HomeScreen extends StatelessWidget {
           ),
           const Gap(10),
           SingleChildScrollView(
-            scrollDirection: Axis.horizontal,
+           // scrollDirection: Axis.vertical,
             padding: EdgeInsets.only(left: 20),
             child: Row(
               children: const [
@@ -127,7 +127,7 @@ class HomeScreen extends StatelessWidget {
           ),
           const Gap(10),
           SingleChildScrollView(
-            scrollDirection: Axis.horizontal,
+           // scrollDirection: Axis.vertical,
             padding: EdgeInsets.only(left: 20),
             child: Row(
               children: const [

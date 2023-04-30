@@ -18,10 +18,10 @@ class MiniCard extends StatelessWidget {
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(21),
               color: Colors.cyan,
-              image: const DecorationImage(
+              image: DecorationImage(
                 fit: BoxFit.cover,
                 image: AssetImage(
-                  "assets/images/background.png"),
+                  "assets/images/background2.png"),
               )
             ),
           )
