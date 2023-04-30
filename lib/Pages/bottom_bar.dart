@@ -17,7 +17,7 @@ class _BottomBarState extends State<BottomBar> {
       style: TextStyle(fontWeight: FontWeight.bold),
     ),
     const Text(
-      "This feature is Under Development",
+      "This feature is Under Development !!",
       style: TextStyle(fontWeight: FontWeight.bold),
     ),
   ];
