@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
 import 'package:practice_ui/Pages/card.dart';
 import 'package:practice_ui/Pages/card2.dart';
+import 'package:practice_ui/Pages/card3.dart';
 import 'package:practice_ui/Pages/smallcard2.dart';
 import 'package:practice_ui/Pages/smallcard.dart';
 
@@ -122,7 +123,7 @@ class HomeScreen extends StatelessWidget {
               children: const [
                 MiniCard(),
                 const Gap(10),
-                MiniCard(),
+                MiniCardd(),
               ],
             ),
           ),
