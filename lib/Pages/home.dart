@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
 import 'package:practice_ui/Pages/card.dart';
 import 'package:practice_ui/Pages/card2.dart';
+import 'package:practice_ui/Pages/smallcard2.dart';
 import 'package:practice_ui/Pages/smallcard.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -55,16 +56,16 @@ class HomeScreen extends StatelessWidget {
                 //const Gap(40),
                 SingleChildScrollView(
                   scrollDirection: Axis.horizontal,
-                  padding: EdgeInsets.only(left: 20),
+                  padding: EdgeInsets.only(left: 5),
                   child: Row(
                     children: const [
                       SmallCard(),
-                      const Gap(5),
+                      const Gap(10),
+                      Small_Card(),
+                      const Gap(10),
                       SmallCard(),
-                      const Gap(5),
-                      SmallCard(),
-                      const Gap(5),
-                      SmallCard(),
+                      const Gap(10),
+                      Small_Card(),
                     ],
                   ),
                 ),
@@ -107,7 +108,7 @@ class HomeScreen extends StatelessWidget {
                 Text("Recent",
                     style: TextStyle(
                         fontSize: 15,
-                        color: Colors.white,
+                        color: Color(0xff515979),
                         //color: Colors.grey,
                         fontWeight: FontWeight.bold)),
               ],

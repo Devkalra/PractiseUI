@@ -10,8 +10,8 @@ class card extends StatelessWidget {
   Widget build(BuildContext context) {
     final size = AppLayout.getSize(context);
     return SizedBox(
-      width: 300,
-      height: 150,
+      width: 250,
+      height: 145,
       child: Container(
         margin: const EdgeInsets.only(right: 16),
         child: Column(
@@ -19,29 +19,38 @@ class card extends StatelessWidget {
             // showing 1st card
             Container(
               decoration: const BoxDecoration(
-                  color: Colors.redAccent,
                   borderRadius: BorderRadius.only(
                       topLeft: Radius.circular(22),
                       topRight: Radius.circular(22),
-                  bottomLeft: Radius.circular(22),
-                  bottomRight: Radius.circular(22)),
+                   bottomLeft: Radius.circular(22),
+                   bottomRight: Radius.circular(22)
                   ),
-              padding: const EdgeInsets.all(16),
+                  image: DecorationImage(
+                    fit: BoxFit.fill,
+                    image: AssetImage(
+                        "assets/images/background1.png"),
+                  )
+                  ),
+              padding: EdgeInsets.symmetric(vertical: 25.0,horizontal: 25),
               child: Column(
                 children: [
                   Row(
                     children: const [
-                      Text(
-                        "Sleep Meditation",
-                        style: TextStyle(
-                            fontSize: 20,
-                            color: Colors.white,
-                            fontWeight: FontWeight.bold),
+                      SizedBox(width: 10,),
+                      Center(
+                        child: Text(
+                          "Sleep Meditation",
+                          style: TextStyle(
+                              fontSize: 20,
+                              color: Colors.white,
+                              fontWeight: FontWeight.bold),
+                        ),
                       ),
                     ],
                   ),
                   Row(
                     children: const [
+                      SizedBox(width: 10,),
                       SizedBox(height: 30,),
                       SizedBox(
                         width: 120,
@@ -55,6 +64,7 @@ class card extends StatelessWidget {
                       )
                     ],
                   ),
+                  SizedBox(height: 2),
                   Row(
                     children: const [
                       SizedBox(height: 40,),
